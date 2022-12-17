@@ -1,0 +1,15 @@
+show_progress(0.750000, 250);
+ui_print("Patching system image unconditionally ...");
+package_extract_file("system.img", "/dev/block/bootdevice/by-name/system");
+
+show_progress(0.750000, 200);
+ui_print("Patching system image unconditionally ...");
+package_extract_file("vendor.img", "/dev/block/bootdevice/by-name/vendor");
+
+show_progress(0.750000, 50);
+ui_print("Patching system image unconditionally ...");
+package_extract_file("boot.img", "/dev/block/bootdevice/by-name/boot");
+
+ui_print(" Installed Successfully ... ");
+
+set_progress(1.000000);
