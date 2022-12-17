@@ -3,11 +3,11 @@ ui_print("Patching system image unconditionally ...");
 package_extract_file("system.img", "/dev/block/bootdevice/by-name/system");
 
 show_progress(0.750000, 200);
-ui_print("Patching system image unconditionally ...");
+ui_print("Patching vendor image unconditionally ...");
 package_extract_file("vendor.img", "/dev/block/bootdevice/by-name/vendor");
 
 show_progress(0.750000, 50);
-ui_print("Patching system image unconditionally ...");
+ui_print("Patching boot image unconditionally ...");
 package_extract_file("boot.img", "/dev/block/bootdevice/by-name/boot");
 
 ui_print(" Installed Successfully ... ");
